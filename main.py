@@ -9,6 +9,7 @@ except ImportError:
     import json
     import eel
     import pyowm
+    system("cls")
 
 
 def get_temperature(weather):
