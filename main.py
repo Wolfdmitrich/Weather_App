@@ -1,6 +1,14 @@
-import json
-import eel
-import pyowm
+try:
+    import json
+    import eel
+    import pyowm
+except ImportError:
+    print(">>> Произошла ошибка при импортировании модулей. Устанавливаю их.")
+    from os import system
+    system("pip install -r requirements.txt")
+    import json
+    import eel
+    import pyowm
 
 
 def get_temperature(weather):
